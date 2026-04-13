@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  
+  /* 🔥 Orange Gradient Background */
+  background: linear-gradient(135deg, #ff6a00, #ffb347);
+  color: white;
+}
+
+/* TEXT CONTENT */
+.content {
+  max-width: 50%;
+  animation: slideLeft 1.5s ease;
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.content h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 25px;
+  border: none;
+  background: white;
+  color: #ff6a00;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+.highlight {
+  color: #ff0000;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+button:hover {
+  background: #222;
+  color: white;
+}
+  
+/* ANIMATIONS */
+
+/* Slide animation */
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
